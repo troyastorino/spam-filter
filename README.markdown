@@ -23,22 +23,22 @@ The parameters at the beginning of core.clj file (`min-spam-score` and
 Using 1/5 as the fraction for cross-validation, I obtained the
 following results:
 
-          total : 1869  100.00 %
-        correct : 1808   96.74 %
- false-positive : 3       0.16 %
- false-negative : 7       0.37 %
-     missed-ham : 12      0.64 %
-    missed-spam : 39      2.09 %
+>          total : 1869  100.00 %
+>        correct : 1808   96.74 %
+> false-positive : 3       0.16 %
+> false-negative : 7       0.37 %
+>     missed-ham : 12      0.64 %
+>    missed-spam : 39      2.09 %
 
 Increasing the cv fraction to 1/10 improved the results to some extent,
 as would be expected with a larger training set:
 
-          total : 934   100.00 %
-        correct : 912    97.64 %
- false-positive : 0       0.00 %
- false-negative : 3       0.32 %
-     missed-ham : 5       0.54 %
-    missed-spam : 14      1.50 %
+>          total : 934   100.00 %
+>        correct : 912    97.64 %
+> false-positive : 0       0.00 %
+> false-negative : 3       0.32 %
+>     missed-ham : 5       0.54 %
+>    missed-spam : 14      1.50 %
 
 missed-ham and missed-spam are the emails that the algorithm
 classified as `:unsure`.
